@@ -1,6 +1,6 @@
 export default function Layout() {
   return (
-    <section id="about" className="min-h-screen bg-gradient-to-br from-[#1a1a1a] via-[#2d2d2d] to-gray-900 text-white overflow-hidden relative">
+    <section id="about" className="min-h-screen bg-gradient-to-br from-[#333333] to-gray-900 text-white overflow-hidden relative">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-72 h-72 bg-[#bcfd4c]/10 rounded-full blur-2 animate-[float_8s_ease-in-out_infinite]"></div>
@@ -11,19 +11,19 @@ export default function Layout() {
         {/* Grid Pattern Overlay */}
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,black,transparent)]"></div>
       </div>
-
+      <br/>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20 lg:py-32">
         {/* Section Header */}
         <div className="text-center mb-16 lg:mb-24">
-          <div className="inline-flex items-center gap-3 bg-white/5 backdrop-blur-md border border-white/10 rounded-full px-6 py-3 mb-6 shadow-2xl">
+          <br/>
+          <div className="inline-flex items-center gap-8 bg-white/5 px-6 py-3 mb-6 shadow-2xl">
             <div className="flex space-x-1">
               <div className="w-2 h-2 bg-[#bcfd4c] rounded-full animate-pulse"></div>
               <div className="w-2 h-2 bg-[#8cdb1f] rounded-full animate-pulse delay-300"></div>
               <div className="w-2 h-2 bg-[#bcfd4c] rounded-full animate-pulse delay-600"></div>
             </div>
           </div>
-          
-          <h2 className="text-2 sm:text-4xl lg:text-5xl xl:text-6xl font-black leading-tight mb-6">
+          <h2 className="text-2 sm:text-4xl lg:text-5xl xl:text-5xl font-black leading-tight mb-6">
             About{' '}
             <span className="text-transparent bg-gradient-to-r from-[#bcfd4c] via-[#8cdb1f] to-[#bcfd4c] bg-clip-text bg-[length:200%_200%] animate-[gradient_3s_ease_infinite]">
               EvintraTech
@@ -32,7 +32,7 @@ export default function Layout() {
           
           <div className="w-24 h-1 bg-gradient-to-r from-[#bcfd4c] to-[#8cdb1f] rounded-full mx-auto mb-8"></div>
           
-          <p className="text-xl sm:text-2xl text-gray-300 leading-relaxed max-w-4xl mx-auto font-light">
+          <p className="text-1xl sm:text-1xl text-gray-300 leading-relaxed max-w-4xl mx-auto font-light">
             Pioneering the future of digital transformation with cutting-edge technology solutions 
             that <span className="text-white font-medium">empower businesses</span> to thrive in the digital era.
           </p>
@@ -153,8 +153,8 @@ export default function Layout() {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl lg:text-3xl font-bold text-white mb-4">Our Values</h3>
-                    <p className="text-lg lg:text-xl text-gray-300 leading-relaxed font-light">
+                    <h3 className="text-1xl lg:text-2xl font-bold text-white mb-4">Our Values</h3>
+                    <p className="text-lg lg:text-1xl text-gray-300 leading-relaxed font-light">
                       Innovation, integrity, and impact drive everything we do. We believe in building 
                       lasting partnerships through transparency, excellence, and a relentless pursuit of perfection.
                     </p>
@@ -177,7 +177,7 @@ export default function Layout() {
                     </div>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2 lg:text-3xl font-bold text-white mb-4">Our Expertise</h3>
+                    <h3 className="text-1 lg:text-2xl font-bold text-white mb-4">Our Expertise</h3>
                     <p className="text-lg lg:text-1xl text-gray-300 leading-relaxed font-light">
                       From AI-driven solutions to cloud infrastructure, our team of experts delivers 
                       cutting-edge technology that transforms businesses and drives sustainable growth.
@@ -189,6 +189,7 @@ export default function Layout() {
           </div>
         </div>
       </div>
+      <br/><br/>
     </section>
   )
 }

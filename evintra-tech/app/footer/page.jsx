@@ -1,6 +1,7 @@
 export default function Footer() {
   return (
     <footer className="bg-[#333333] text-white py-12">
+        <br/>
       <div className="container">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
@@ -48,11 +49,14 @@ export default function Footer() {
             </div>
           </div>
         </div>
+        <br/>
         
         {/* Footer Bottom */}
         <div className="border-t border-gray-600 pt-8 text-center">
-          <p className="text-gray-300">&copy; 2024 Evintra-Tech. All rights reserved.</p>
+            <br/>
+          <p className="text-gray-300">&copy; 2025 Evintra-Tech. All rights reserved.</p>
         </div>
+        <br/>
       </div>
     </footer>
   )

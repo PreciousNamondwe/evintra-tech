@@ -25,7 +25,6 @@ export default function Header() {
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
     { name: "Services", href: "/services" },
-    { name: "Solutions", href: "/solutions" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -38,8 +37,8 @@ export default function Header() {
     <div>
       <nav className={`fixed w-full max-w-screen px-4 py-3 mx-auto transition-all duration-300 z-[9999] ${
         isScrolled 
-          ? 'bg-white/95 backdrop-blur-xl shadow-lg border-b border-gray-100' 
-          : 'bg-white/90 backdrop-blur-lg'
+          ? 'bg-white/50 backdrop-blur-xl shadow-lg' 
+          : 'bg-white/70 backdrop-blur-lg'
       }`}>
         <div className="container flex flex-wrap items-center justify-between mx-auto">
           {/* Logo */}
@@ -142,11 +141,6 @@ export default function Header() {
                   </Link>
                 </li>
               ))}
-              <li className="mt-6 px-4">
-                <button className="w-full bg-gradient-to-r from-[#bcfd4c] to-[#8cdb1f] text-gray-900 font-semibold px-6 py-3 rounded-xl shadow-lg shadow-green-200 hover:shadow-xl hover:shadow-green-300 transition-all duration-300">
-                  Get Started
-                </button>
-              </li>
             </ul>
           </div>
 
@@ -157,7 +151,7 @@ export default function Header() {
                 <li key={index}>
                   <Link 
                     href={item.href}
-                    className={`relative px-6 py-2 text-sm font-medium transition-all duration-200 rounded-lg ${
+                    className={`relative px-6 py-2 text-20 font-medium transition-all duration-200 rounded-lg ${
                       isActive(item.href)
                         ? 'text-gray-900'
                         : 'text-gray-600 hover:text-gray-900'

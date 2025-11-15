@@ -2,12 +2,16 @@ export default function Hero() {
   return (
     <section id="home" className="min-h-screen bg-gradient-to-br from-[#333333] to-gray-900 text-white overflow-hidden">
       <div className="relative pt-32 pb-20 lg:pt-40 lg:pb-32">
-        {/* Background Elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 bg-[#bcfd4c]/5 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-56 h-56 sm:w-64 sm:h-64 lg:w-80 lg:h-80 bg-[#8cdb1f]/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 bg-white/5 rounded-full blur-2xl"></div>
-        </div>
+         {/* Animated Background Elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-[#bcfd4c]/10 rounded-full blur-2 animate-[float_8s_ease-in-out_infinite]"></div>
+        <div className="absolute top-1/2 right-20 w-96 h-96 bg-[#8cdb1f]/10 rounded-full blur-2 animate-[float_8s_ease-in-out_infinite_delay-2000ms]"></div>
+        <div className="absolute bottom-32 left-1/3 w-80 h-80 bg-white/5 rounded-full blur-2 animate-[float_8s_ease-in-out_infinite_delay-4000ms]"></div>
+        <div className="absolute top-40 right-1/4 w-64 h-64 bg-[#bcfd4c]/5 rounded-full blur-2xl animate-pulse"></div>
+        
+        {/* Grid Pattern Overlay */}
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:64px_64px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,black,transparent)]"></div>
+      </div>
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 xl:gap-20 items-center">
